@@ -4,7 +4,7 @@ const { expect } = require('@jest/globals');
 // box configurado como paquete
 const factory = require('../box');
 
-test.only('Creo la caja usando su factoria', () => {
+test('Creo la caja usando su factoria', () => {
     expect(factory.singletonBox.getBox().name).toBe("Rick's box");
   });
 
@@ -31,6 +31,7 @@ test('Factoria devuelve siempre la misma caja (singleton)', () => {
  * SETUP y TEARDOWN
  */ 
 
+/*
 describe('scoping de beforeEach', () => {
 
     let box = null;
@@ -86,3 +87,4 @@ describe('scoping de beforeEach', () => {
         // a la funcion constructora MrMeeseeks
     })
 })
+*/
