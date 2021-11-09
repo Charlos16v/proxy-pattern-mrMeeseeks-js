@@ -31,7 +31,7 @@ test('Factoria devuelve siempre la misma caja (singleton)', () => {
  * SETUP y TEARDOWN
  */ 
 
-/*
+
 describe('scoping de beforeEach', () => {
 
     let box = null;
@@ -43,7 +43,7 @@ describe('scoping de beforeEach', () => {
         box = factory.singletonBox.getBox();
     } );
 
-    test('shadowing de variable messageOnCreate', () => {
+    test.only('shadowing de variable messageOnCreate', () => {
 
       // OBJECT TO_HAVE_PROPERTY
 
@@ -87,4 +87,3 @@ describe('scoping de beforeEach', () => {
         // a la funcion constructora MrMeeseeks
     })
 })
-*/
