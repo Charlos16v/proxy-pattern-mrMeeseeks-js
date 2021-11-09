@@ -3,7 +3,7 @@ const { expect } = require('@jest/globals');
 // mrmeeseks configurado como paquete
 const factory = require('../mrmeeseeks');
 
-test('Creo un meeseeks usando su factoria', () => {
+test.only('Creo un meeseeks usando su factoria', () => {
     expect(factory.singleMrMeeseeks.get()).toBeTruthy;
   });
 
