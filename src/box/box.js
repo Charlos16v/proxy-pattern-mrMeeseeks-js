@@ -20,6 +20,11 @@ Box.prototype.getProtoMeeseks = function getProtoMeeseks() {
     }
 }
 
+Box.prototype.pressButton = function pressButton(reality) {
+    let newMrMeeseeksClone = this.createMrMeeseeks()
+    reality.push(newMrMeeseeksClone);
+}
+
 
 var factory = (function singletonBox() {
     const box = new Box();

@@ -43,7 +43,7 @@ describe('scoping de beforeEach', () => {
         box = factory.singletonBox.getBox();
     } );
 
-    test.only('shadowing de variable messageOnCreate', () => {
+    test('shadowing de variable messageOnCreate', () => {
 
       // OBJECT TO_HAVE_PROPERTY
 
@@ -66,7 +66,7 @@ describe('scoping de beforeEach', () => {
       expect(proto.messageOnCreate).toEqual(expect.stringMatching("I'm Mr Meeseeks! Look at meeee!"));
     });
 
-    test('Presionando boton de la caja se añade meeseeks a la realidad', () => {
+    test.only('Presionando boton de la caja se añade meeseeks a la realidad', () => {
 
         let reality = [];
         box.pressButton(reality);
