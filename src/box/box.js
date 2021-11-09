@@ -22,6 +22,7 @@ Box.prototype.getProtoMeeseks = function getProtoMeeseks() {
 
 Box.prototype.pressButton = function pressButton(reality) {
     let newMrMeeseeksClone = this.createMrMeeseeks()
+    //TODO: SpeakOnCreate
     reality.push(newMrMeeseeksClone);
 }
 
