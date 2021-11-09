@@ -1,0 +1,14 @@
+{
+  "name": "box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "box.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Carlos Uriel",
+  "license": "MIT"
+}
