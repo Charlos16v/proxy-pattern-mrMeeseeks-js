@@ -19,7 +19,15 @@ MrMeeseeks.prototype.speakOnRequest = function speakOnRequest() {
 }
 
 MrMeeseeks.prototype.makeRequest = function makeRequest(action, object) {
-    
+    let prepareRequest = function(object) {
+        function execute() {
+            return action + " " + object;
+        }
+        return execute;
+    };
+
+    this.accion = prepareRequest(object);
+    this.speakOnRequest();
 }
 
 
