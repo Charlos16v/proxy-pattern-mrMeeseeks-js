@@ -30,6 +30,12 @@ MrMeeseeks.prototype.makeRequest = function makeRequest(action, object) {
     this.speakOnRequest();
 }
 
+MrMeeseeks.prototype.fulfillRequest = function fulfillRequest() {
+    console.log(this.accion() + " All done!!");
+    // return string value for the tests
+    return this.accion() + " All done!!";
+}
+
 
 // Singleton MrMeeseeks
 var factory = (function singleMrMeeseeks() {

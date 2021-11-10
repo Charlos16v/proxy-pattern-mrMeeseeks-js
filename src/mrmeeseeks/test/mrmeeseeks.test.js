@@ -69,7 +69,7 @@ describe('scoping de beforeEach', () => {
         expect(meeseeks.speakOnRequest()).toMatch(expected);
     });
 
-    test.only('makeRequest añade una nueva propiedad accion al objeto meeseeks', () => {
+    test('makeRequest añade una nueva propiedad accion al objeto meeseeks', () => {
 
         // OBJECT TO_HAVE_PROPERTY
 
@@ -91,7 +91,7 @@ describe('scoping de beforeEach', () => {
         expect(meeseeksProto).not.toHaveProperty('accion');
     })
 
-    test('fullfillRequest ejecuta this.accion()', () => {
+    test.only('fullfillRequest ejecuta this.accion()', () => {
 
         // MOCK FUNCTIONS con IMPLEMENTATIONS
 
