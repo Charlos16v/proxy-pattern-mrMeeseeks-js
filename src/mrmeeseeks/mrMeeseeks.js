@@ -39,9 +39,10 @@ MrMeeseeks.prototype.fulfillRequest = function fulfillRequest() {
 
 // Singleton MrMeeseeks
 var factory = (function singleMrMeeseeks() {
+    const proto = new MrMeeseeks();
     return {
         // devolvemos el prototipo
-        get: () => {return new MrMeeseeks}
+        get: () => proto
     }
 })()
 
