@@ -3,7 +3,7 @@ const { expect } = require('@jest/globals');
 // mrmeeseks configurado como paquete
 const factory = require('../mrmeeseeks');
 
-test.only('Creo un meeseeks usando su factoria', () => {
+test('Creo un meeseeks usando su factoria', () => {
     expect(factory.singleMrMeeseeks.get()).toBeTruthy;
   });
 
@@ -69,7 +69,7 @@ describe('scoping de beforeEach', () => {
         expect(meeseeks.speakOnRequest()).toMatch(expected);
     });
 
-    test('makeRequest añade una nueva propiedad accion al objeto meeseeks', () => {
+    test.only('makeRequest añade una nueva propiedad accion al objeto meeseeks', () => {
 
         // OBJECT TO_HAVE_PROPERTY
 
