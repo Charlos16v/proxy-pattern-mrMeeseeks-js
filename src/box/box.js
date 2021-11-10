@@ -1,3 +1,5 @@
+var singletonMrMeeseeks = require("../mrmeeseeks/mrMeeseeks.js");
+
 function Box() {
     this.name = "Rick's box";
     this.mrMeeseeks = null;
@@ -8,7 +10,7 @@ var mrMeeseeks = {
 
 Box.prototype.createMrMeeseeks = function createMrMeeseeks() {
     if(this.mrMeeseeks == null) {
-        this.mrMeeseeks = mrMeeseeks;
+        this.mrMeeseeks = singletonMrMeeseeks.singleMrMeeseeks.get();
     }
 
     return Object.create(this.mrMeeseeks);
@@ -22,7 +24,7 @@ Box.prototype.getProtoMeeseks = function getProtoMeeseks() {
 
 Box.prototype.pressButton = function pressButton(reality) {
     let newMrMeeseeksClone = this.createMrMeeseeks()
-    //TODO: SpeakOnCreate
+    this.mrMeeseeks.speakOnCreate();
     reality.push(newMrMeeseeksClone);
 }
 
