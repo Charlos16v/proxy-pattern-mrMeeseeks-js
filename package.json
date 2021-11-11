@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "jest": "^27.3.1"
-  }
+  },
+  "name": "proxy-pattern-mrmeeseeks",
+  "description": "",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlos16v/proxy-pattern-mrMeeseeks-js.git"
+  },
+  "author": "Carlos Uriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Charlos16v/proxy-pattern-mrMeeseeks-js/issues"
+  },
+  "homepage": "https://github.com/Charlos16v/proxy-pattern-mrMeeseeks-js#readme"
 }
