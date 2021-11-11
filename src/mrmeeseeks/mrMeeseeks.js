@@ -36,6 +36,10 @@ MrMeeseeks.prototype.fulfillRequest = function fulfillRequest() {
     return this.accion() + " All done!!";
 }
 
+MrMeeseeks.prototype.learnRequest = function learnRequest(action, object) {
+    this.accion = action(object);
+}
+
 
 // Singleton MrMeeseeks
 var factory = (function singleMrMeeseeks() {
